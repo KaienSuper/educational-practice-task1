@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<head>
+	<title>1 задание</title>
+</head>
+<body>
+	<canvas id="MyCanvas" width="1000" height="1000">
+	</canvas>
+</body>
+
+<script type="text/javascript">
+	var myCanvas = document.getElementById('MyCanvas');
+	var ctx = MyCanvas.getContext('2d');
+
+	ctx.beginPath();
+	ctx.strokeStyle = 'Black';
+	ctx.lineWidth = 2
+	ctx.strokeRect(150, 50, 300, 20);
+	
+	ctx.beginPath();
+	ctx.arc(200, 60, 10, 0, Math.PI*2, true);
+	ctx.arc(263, 60, 10, 0, Math.PI*2, true);
+	ctx.arc(340, 60, 10, 0, Math.PI*2, true);
+	ctx.arc(400, 60, 10, 0, Math.PI*2, true);
+	ctx.fill();
+	
+	ctx.beginPath();
+	ctx.strokeStyle = 'Black';
+	ctx.lineWidth = 2;
+	ctx.moveTo(150,50);
+	ctx.lineTo(150, 170);
+	ctx.stroke();
+	
+	ctx.beginPath();
+	ctx.strokeStyle = 'Black';
+	ctx.lineWidth = 4;
+	ctx.strokeRect(125, 170, 50, 20);
+	
+	ctx.beginPath();
+	ctx.strokeStyle = 'Black';
+	ctx.lineWidth = 4;
+	ctx.moveTo(200,70);
+	ctx.lineTo(170, 120);
+	ctx.lineTo(230, 120);
+	ctx.lineTo(200, 70);
+	ctx.stroke();
+	
+	ctx.beginPath();
+	ctx.font = "20pt Times New Roman";
+	ctx.fillText("3 кг", 125, 220);
+	
+	ctx.beginPath();
+	ctx.strokeStyle = 'Black';
+	ctx.lineWidth = 2;
+	ctx.moveTo(450, 50);
+	ctx.lineTo(450, 85);
+	
+	ctx.moveTo(450, 95);
+	ctx.lineTo(450, 110);
+	
+	ctx.moveTo(450, 120);
+	ctx.lineTo(450, 135);
+	
+	ctx.moveTo(450, 145);
+	ctx.lineTo(450, 160);
+	
+	ctx.moveTo(450, 160);
+	ctx.lineTo(435, 160);
+	
+	ctx.moveTo(425, 160);
+	ctx.lineTo(425, 175);
+	
+	ctx.moveTo(425, 185);
+	ctx.lineTo(425, 200);
+	
+	ctx.moveTo(425, 210);
+	ctx.lineTo(425, 220);
+	
+	ctx.moveTo(435, 220);
+	ctx.lineTo(450, 220);
+	
+	ctx.moveTo(460, 220);
+	ctx.lineTo(475, 220);
+	
+	ctx.moveTo(485, 160);
+	ctx.lineTo(485, 175);
+	
+	ctx.moveTo(485, 185);
+	ctx.lineTo(485, 200);
+	
+	ctx.moveTo(485, 210);
+	ctx.lineTo(485, 220);
+	
+	ctx.moveTo(460, 160);
+	ctx.lineTo(475, 160);
+	
+	
+	ctx.stroke();
+	ctx.closePath();
+
+
+</script>
